@@ -2,3 +2,4 @@
 /* tslint:disable */
 /* eslint-disable */
 export * as problematicNftMintSol from "./ProblematicNFTMint.sol";
+export * as pwnNftMintSol from "./pwnNFTMint.sol";

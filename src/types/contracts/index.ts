@@ -3,3 +3,5 @@
 /* eslint-disable */
 import type * as problematicNftMintSol from "./ProblematicNFTMint.sol";
 export type { problematicNftMintSol };
+import type * as pwnNftMintSol from "./pwnNFTMint.sol";
+export type { pwnNftMintSol };

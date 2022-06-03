@@ -20,3 +20,5 @@ export type { IERC165 } from "./@openzeppelin/contracts/utils/introspection/IERC
 export { IERC165__factory } from "./factories/@openzeppelin/contracts/utils/introspection/IERC165__factory";
 export type { ProblematicNFT } from "./contracts/ProblematicNFTMint.sol/ProblematicNFT";
 export { ProblematicNFT__factory } from "./factories/contracts/ProblematicNFTMint.sol/ProblematicNFT__factory";
+export type { PwnNFT } from "./contracts/pwnNFTMint.sol/PwnNFT";
+export { PwnNFT__factory } from "./factories/contracts/pwnNFTMint.sol/PwnNFT__factory";
