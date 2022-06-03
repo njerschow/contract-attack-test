@@ -61,6 +61,7 @@ export const MetaMaskProvider = ({ children }) => {
       isLoading,
       connect,
       disconnect,
+      connector,
       shouldDisable,
     }),
     [isActive, isLoading, shouldDisable, account, connector],
