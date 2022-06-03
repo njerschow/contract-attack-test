@@ -27,6 +27,7 @@ if (!infuraApiKey) {
 const chainIds = {
   "arbitrum-mainnet": 42161,
   avalanche: 43114,
+  fuji: 43113,
   bsc: 56,
   hardhat: 31337,
   mainnet: 1,
@@ -44,6 +45,9 @@ function getChainConfig(chain: keyof typeof chainIds): NetworkUserConfig {
       break;
     case "bsc":
       jsonRpcUrl = "https://bsc-dataseed1.binance.org";
+      break;
+    case "fuji":
+      jsonRpcUrl = "https://api.avax-test.network/ext/bc/C/rpc";
       break;
     default:
       jsonRpcUrl = "https://" + chain + ".infura.io/v3/" + infuraApiKey;
@@ -88,6 +92,7 @@ const config: HardhatUserConfig = {
     },
     arbitrum: getChainConfig("arbitrum-mainnet"),
     avalanche: getChainConfig("avalanche"),
+    fuji: getChainConfig("fuji"),
     bsc: getChainConfig("bsc"),
     mainnet: getChainConfig("mainnet"),
     optimism: getChainConfig("optimism-mainnet"),
