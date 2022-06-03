@@ -168,7 +168,7 @@ const App = () => {
   )
 }
 
-async function getPwnerContract (signer: ethers.Signer): PwnNFT {
+async function getPwnerContract (signer: ethers.Signer): Promise<PwnNFT> {
   const contract = new ethers.Contract(PWNER_CONTRACT, pwnABI.abi, signer) as PwnNFT
   return contract
 }
