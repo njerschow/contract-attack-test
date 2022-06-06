@@ -1,6 +1,15 @@
 # Solidity Test
 
 NFT deployed to: 0xC09Ff9115C1CE86a3F1Bd501a625772fd299cd42
+PwnNFT contract deployed to: 
+
+## To use:
+Hit the deposit function of the NFT contract with one wallet. You can then use the frontend to steal those funds from another wallet by exploiting via re-entrancy
+
+Easiest way to trigger a deposit on the original contract is by uploading the ABI to https://eth95.dev/
+
+You have to be on the AVAX Fuji network, though this works on any EVM chain. Further improvements include suggesting a chain switch to metamask if the wrong chain is detected.
+
 
 ## Contributing
 
